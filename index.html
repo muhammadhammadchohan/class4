@@ -4,15 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Class 4</title>
+    <title>Class 7</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <style>
-      body, html{
+      body,
+      html {
         margin: 0;
         padding: 0;
       }
-    
+
       .container {
         width: 85%;
         margin: 0 auto;
@@ -34,7 +47,7 @@
         width: 100%;
         background-color: rgb(222, 250, 194);
       }
-      div {
+      .header {
         height: 10%;
         display: flex;
         align-items: center;
@@ -51,12 +64,12 @@
       }
 
       nav.navbar ul {
-        display: flex;
+        /* display: flex; */
         list-style: none;
       }
-      nav.navbar ul li {
+      /* nav.navbar ul li {
         padding: 1rem;
-      }
+      } */
       nav.navbar ul li a {
         text-decoration: none;
       }
@@ -67,20 +80,20 @@
         margin: 0 1rem 0 0;
       }
 
-      .btn {
+      /* .btn {
         padding: 0.5rem 1rem;
         border: none;
         outline: none;
         background-color: darkgoldenrod;
         color: #fff;
-      }
-      main{
+      } */
+      main {
         margin: 6.5rem 0;
       }
       .input-container {
-         text-align: center;
+        text-align: center;
       }
-      input{
+      input {
         width: 50%;
         position: relative;
       }
@@ -89,12 +102,36 @@
        top: 0;
        right: 0;
       } */
+
+      .flex-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        /* justify-content: center; */
+        /* flex-wrap:wrap; */
+        /* background-color: yellowgreen; */
+        border: 1px solid red;
+        height: 1000px;
+        /* width: 50%; */
+      }
+
+      .flex-container div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: tomato;
+        margin: 5px;
+        border: 1px solid green;
+        height: 100px;
+        width: 100px;
+      }
     </style>
   </head>
 
   <body>
-    <header>
-      <div class="container">
+    <!-- <header>
+      <div class="container header">
         <div class="logo-container">
           <svg viewBox="0 0 3940 610" class="bnbo">
             <path
@@ -118,18 +155,114 @@
           <button class="btn">Signup</button>
         </div>
       </div>
-    </header>
+    </header> -->
+
+    <nav class="navbar navbar-expand-lg navbar-lg bg-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
     <main>
-      <article>
+      <h1>Ali Haider</h1>
+      <!-- <article>
         <h1>Lorem ipsum dolor sit amet.</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium exercitationem similique sint aliquid commodi voluptatum, autem in quas fugiat. Recusandae, molestiae doloremque voluptate ut perferendis vel. Aperiam vitae iusto animi eum molestias quae ipsum inventore ab odit repudiandae vel suscipit libero, reiciendis mollitia velit minus cum porro optio earum aspernatur ea reprehenderit esse. Culpa nesciunt perferendis esse ad iste odit, ipsa aliquid dolor nulla eos maiores qui dignissimos fuga molestias, pariatur inventore enim consequatur neque velit harum cum laudantium. Minus, suscipit vitae debitis nam esse aliquid minima aliquam nihil repellat? Eum quidem reprehenderit quibusdam et, obcaecati inventore, praesentium culpa saepe nesciunt quos quisquam eaque. Qui exercitationem, quas dolorem doloremque minus sed sint facere quasi, vel aut, nisi saepe eligendi reiciendis. Molestiae a modi magnam expedita sed assumenda tempore quibusdam deleniti ducimus, aut obcaecati autem deserunt id qui repudiandae delectus ea corporis totam pariatur, sit dolore nostrum incidunt ipsum. Voluptatibus perferendis sunt ut sequi ratione earum amet animi est obcaecati fugit, quae quisquam possimus. Quis sed illum rerum labore illo ullam laborum at sequi distinctio eos ea modi vel cumque consequatur adipisci quam placeat, et, eum sint aliquid accusantium! Est saepe amet itaque quae ipsum dolore aliquid dicta reprehenderit, officiis expedita cum placeat praesentium minus natus sint suscipit. Eligendi ipsam ab expedita nobis atque sapiente quam harum inventore ducimus, maxime consequuntur quibusdam totam nostrum, reiciendis necessitatibus blanditiis laboriosam perferendis eius? Reiciendis vel nihil aliquid quibusdam molestias rerum, atque dolorem facere, doloribus repellat earum. Velit doloribus libero ipsa sapiente consectetur iure culpa, maiores fugiat id esse quidem repellendus reiciendis suscipit ut, quam labore, eum ratione? Tempore, odio voluptatum? Doloribus odio vitae eius. Quisquam, repudiandae possimus et officia vero nisi ut sit provident dolor pariatur illo deleniti ea error alias nihil eos reiciendis nemo fugit nulla! Voluptatibus ex soluta sint dolores hic labore harum excepturi repellendus tempore cum consequatur maxime debitis, rem, architecto numquam corrupti! Quibusdam impedit nulla dolorum velit necessitatibus illo magni sequi, hic ex minima doloribus inventore odit? Quas mollitia eveniet sapiente sequi nobis minus laboriosam sunt, natus, quis tempore velit molestiae! Quod voluptates id nobis odio! Debitis quos hic soluta beatae. Sunt eligendi magni ipsum tenetur, nostrum cumque quam. Odit sequi libero reprehenderit porro saepe sed quo voluptatem dolor laudantium, eveniet eius facere? Nisi, eligendi, quia tenetur molestias sapiente nemo incidunt perferendis ad esse ex error aliquid reiciendis consequatur sint odit cumque! Nesciunt obcaecati sint qui doloribus ipsum neque maiores maxime dolorum aspernatur dicta. Neque ut, ducimus amet fugit enim facere libero iure officia commodi vero perspiciatis debitis nostrum, maxime mollitia itaque alias suscipit temporibus necessitatibus, error non. Laudantium repellat odit sunt eaque deserunt fuga, soluta quo unde minus animi ducimus quidem eius id! Nulla accusantium quam consectetur doloribus rerum itaque, aliquid autem porro nesciunt dolorem dolore quod reprehenderit. A incidunt necessitatibus ex animi fuga est earum voluptatum! Quam cumque maiores dolores doloremque vero? Minima eveniet totam modi sapiente soluta fugiat eum, aut repudiandae, corporis vitae explicabo ullam possimus sit voluptate aliquid quisquam voluptatem dicta est eius temporibus eligendi culpa iste ea. Quas iusto sapiente nemo minima, ducimus unde repellendus veniam perspiciatis. Nostrum quia rem minus doloribus numquam maxime ipsum ab inventore repellat reprehenderit. Rerum illum temporibus culpa, nam asperiores perspiciatis aperiam commodi vitae at, in aliquam ab est sequi quam illo quidem sunt veniam sapiente totam accusamus nemo qui repudiandae. Blanditiis dolore nihil aspernatur voluptates quia. Omnis, eum voluptatibus obcaecati magnam consectetur reprehenderit accusamus illo molestiae sunt, error possimus rem repellat pariatur necessitatibus fuga odit minima quo autem ab ut! Aut voluptas aperiam dignissimos corrupti suscipit? Consequuntur optio sint ipsa ut praesentium accusamus sed repellendus modi laborum! Suscipit totam, eveniet repellat beatae fuga soluta dicta laboriosam voluptates iste animi, maxime harum unde necessitatibus debitis placeat est repellendus adipisci ab nobis. Dolorem odio natus deleniti perferendis quibusdam ad quo, qui totam placeat commodi voluptate. Excepturi numquam rerum obcaecati ex reprehenderit, facilis quis in ut! Autem quam quas neque vitae? Exercitationem sed cumque vero eligendi saepe vel fugiat distinctio! Corporis distinctio eum rerum incidunt magni sapiente explicabo quo, quod, impedit animi sed obcaecati ipsum! Tempore laborum quae culpa cupiditate iusto, recusandae nemo quas eveniet consequuntur est dolores, exercitationem illum quos. At inventore esse numquam beatae veritatis, itaque molestias! Tempora modi sunt possimus eligendi numquam culpa quo corporis voluptatibus quibusdam commodi illum quis beatae facere soluta aliquid tenetur minima doloremque fuga, a dolorum enim? Reiciendis itaque placeat, nam nulla accusantium voluptates quam ipsa, magnam architecto aspernatur laboriosam enim. Quae rerum maxime ipsa hic ut quia nam sit, vel quaerat sunt dolorum nulla commodi veniam aliquam quam alias enim asperiores. Quis reprehenderit eaque voluptatum a, in debitis sapiente sint quo quasi minima, cum reiciendis totam dolore quos placeat quam. Exercitationem libero quae modi sed dolorem cumque blanditiis fugiat veritatis ducimus praesentium doloremque nostrum laudantium, perferendis fuga deserunt natus? Ipsam est, recusandae et provident voluptas ipsa natus minima, sequi eius vitae earum architecto sunt esse minus totam quas cumque. Expedita dolor libero modi dolorem quo porro fugiat, magni quia accusamus amet fugit corrupti quis, ea, ullam rem voluptas a nihil minima. Cum dolore expedita suscipit odit, fuga qui eligendi doloremque provident dolorem! Blanditiis perferendis accusamus, eius nemo placeat corrupti atque voluptas nostrum. Minus ut natus, quidem alias debitis mollitia eveniet ratione fuga inventore odit ea odio quas vero, laudantium magnam autem officiis laborum. Commodi distinctio praesentium deserunt ipsa soluta ad facere, sint nulla labore nemo laboriosam harum eveniet. Cumque veritatis sint fuga qui, hic recusandae similique distinctio modi dolorum corrupti, totam earum odio asperiores consectetur aliquam ipsam id. Facilis, officiis, quae soluta aliquid ipsum eum ab quibusdam quis culpa velit inventore magnam fugit! Vitae ad ullam a numquam asperiores dolorum aliquid aspernatur impedit, beatae excepturi vero velit hic recusandae doloremque aliquam ratione dignissimos blanditiis cumque culpa ipsum rem error, voluptatibus provident? Alias sapiente delectus voluptas veritatis vel eius cumque nam assumenda, corrupti, magni error nostrum atque quam beatae excepturi magnam doloremque accusamus deserunt veniam voluptatibus est recusandae a voluptates! Reprehenderit odit asperiores odio sequi in nostrum id ipsa atque ipsum eius, repudiandae nulla!</p>
-      </article>
+      </article> -->
 
-      <div class="input-container">
+      <!-- <div class="input-container">
         <input type="text">
         <i class="far fa-user"></i>
 
+      </div> -->
+
+      <div class="flex-container">
+        <div id="flex1">1</div>
+        <div id="flex2">2</div>
+        <div id="flex3">3</div>
+        <div id="flex4">4</div>
+        <div id="flex5">5</div>
+        <div id="flex6">6</div>
       </div>
     </main>
+
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    <button type="button" class="btn btn-link">Link</button>
+    <!-- <script>
+      console.log(10+10+10+100*1000)
+    </script> -->
+    <script src="./index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
